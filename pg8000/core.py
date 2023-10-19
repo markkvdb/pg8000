@@ -2,7 +2,6 @@ import codecs
 import socket
 from collections import defaultdict, deque
 from hashlib import md5
-from importlib.metadata import version
 from io import IOBase, TextIOBase
 from itertools import count
 from struct import Struct
@@ -19,7 +18,7 @@ from pg8000.converters import (
 from pg8000.exceptions import DatabaseError, Error, InterfaceError
 
 
-ver = version("pg8000")
+ver = "1.30.2"
 
 
 def pack_funcs(fmt):
